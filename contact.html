@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./template.css" />
+    <title>Contact Me Page</title>
+    <script>
+      function message() {
+        document.getElementById("submission").style.display = "visible";
+        event.preventDefault();
+      }
+    </script>
+  </head>
+  <body class="light-body">
+    <div class="contact-body">
+      <div class="email">frank.j.liu (at) berkeley.edu</div>
+      <div class="socials">
+        <a
+          href="https://www.linkedin.com/in/frank-liu-2133591a3/"
+          target="_blank"
+          id="linkedin"
+          >LinkedIn</a
+        >
+        <a
+          href="https://www.facebook.com/frank.liu.56808/"
+          target="_blank"
+          id="instagram"
+          >Instagram</a
+        >
+        <a
+          href="https://www.instagram.com/frankliu098/"
+          target="_blank"
+          id="facebook"
+          >Facebook</a
+        >
+        <a href="https://github.com/frankliu098" target="_blank" id="github"
+          >Github
+        </a>
+      </div>
+      <div class="contact-div">
+        <form class="contact-form">
+          <label class="form-center">First name</label>
+          <input
+            class="form-center-enlarge"
+            type="text"
+            id="first-name"
+            placeholder="First name"
+          />
+          <label class="form-center">Last name</label>
+          <input
+            class="form-center-enlarge"
+            type="text"
+            id="last-name"
+            placeholder="Last name"
+          />
+          <textarea
+            class="form-center-enlarge"
+            id="textarea"
+            placeholder="Message"
+          ></textarea>
+          <button
+            onClick="message()"
+            class="form-center-enlarge"
+            id="submit-button"
+          >
+            Submit
+          </button>
+          <p id="submission">Message Received!</p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
