@@ -8,14 +8,15 @@
     <title>Contact Me Page</title>
     <script>
       function message() {
-        document.getElementById("submission").style.display = "visible";
         event.preventDefault();
+        const current_div = document.getElementById("submission");
+        current_div.style.color = "lightgreen";
       }
     </script>
   </head>
   <body class="light-body">
     <div class="contact-body">
-      <div class="email">frank.j.liu (at) berkeley.edu</div>
+      <h2 class="email">frank.j.liu (at) berkeley.edu</h2>
       <div class="socials">
         <a
           href="https://www.linkedin.com/in/frank-liu-2133591a3/"
@@ -67,7 +68,7 @@
           >
             Submit
           </button>
-          <p id="submission">Message Received!</p>
+          <h3 id="submission">Message Received!</h3>
         </form>
       </div>
     </div>
